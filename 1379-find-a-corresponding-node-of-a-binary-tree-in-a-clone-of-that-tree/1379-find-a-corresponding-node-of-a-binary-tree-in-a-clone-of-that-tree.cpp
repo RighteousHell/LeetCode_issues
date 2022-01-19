@@ -30,7 +30,7 @@ public:
           return;  
         }
         
-        //cout << "my value " << root->val << " target valuse " << target->val << endl; 
+        //cout << "my value " << root->val << " target value " << target->val << endl; 
         
         if ( root->val == target->val )
         {
