@@ -4,7 +4,6 @@ public:
         vector<int> answer;
         
         int count  = 0;
-        //bool flag = false;
         
         
         sort(nums.begin(), nums.end());
