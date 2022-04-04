@@ -22,7 +22,6 @@ public:
             ++nodes_num;
             
         }
-        cout << "Nodes: " << nodes_num;
         
         steper = head;
         for (int i = 1; i < k; ++i)
