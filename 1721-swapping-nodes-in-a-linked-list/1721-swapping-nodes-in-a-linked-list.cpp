@@ -28,15 +28,13 @@ public:
         {
           steper = steper->next;  
         }
-        ListNode tmp = (*steper);
         ListNode* tmp_p = steper;
         steper = head;
         for (int i = 0; i < nodes_num-k; ++i)
         {
           steper = steper->next; 
         }
-        tmp_p->val = steper->val;
-        steper->val = tmp.val;
+        swap(tmp_p->val,steper->val);
         
         return head;
         
