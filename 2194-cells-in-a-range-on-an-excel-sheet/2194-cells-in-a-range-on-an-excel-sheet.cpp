@@ -1,9 +1,7 @@
 class Solution {
 public:
     vector<string> cellsInRange(string s) {
-        const std::string delim = ":";
-        std::string source_pos, dest_pos;
-        
+    
 
         vector<string> answer;
         std::string tmp = "";
