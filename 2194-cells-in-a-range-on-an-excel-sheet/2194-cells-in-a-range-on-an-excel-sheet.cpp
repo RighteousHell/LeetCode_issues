@@ -9,9 +9,7 @@ public:
         {
             for (char j = s[1]; j <= s[4]; ++j)
             {
-                cout << i << " + " << j;
                 answer.emplace_back(tmp + i + j);
-                
             }
             tmp = "";
         }
