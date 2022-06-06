@@ -6,11 +6,10 @@ public:
     int countMatches(vector<vector<string>>& items, string ruleKey, string ruleValue) {
         
         int ans = 0;
-        auto entity = items_specif.find(ruleKey);
         
         for (auto& tmp: items)
         {
-            if (ruleValue == tmp.at(entity->second))
+            if (ruleValue == tmp.at(items_specif.find(ruleKey)->second))
             {
                 ++ans;
             }
