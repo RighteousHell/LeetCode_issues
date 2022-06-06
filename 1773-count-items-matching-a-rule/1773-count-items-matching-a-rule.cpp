@@ -5,8 +5,6 @@ public:
     
     int countMatches(vector<vector<string>>& items, string ruleKey, string ruleValue) {
         
-        cout << "RuleValue: " <<  ruleValue << endl;
-        cout << "ruleKey: " <<  ruleKey;
         int ans = 0;
         auto entity = items_specif.find(ruleKey);
         
