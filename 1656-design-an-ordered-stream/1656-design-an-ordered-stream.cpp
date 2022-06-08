@@ -21,7 +21,7 @@ public:
         else{
             map.emplace(idKey, value);
         }
-        auto tmp_pair = map.find(curr_key);
+        
         do
         {
             auto tmp_pair = map.find(curr_key);
