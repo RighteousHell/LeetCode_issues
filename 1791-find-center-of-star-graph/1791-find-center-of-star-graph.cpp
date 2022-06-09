@@ -23,6 +23,6 @@ public:
         
     }
         
-     return 1;   
+        return -1; // never should happens
     }
 };
