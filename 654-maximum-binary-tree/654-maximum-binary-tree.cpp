@@ -26,13 +26,7 @@ public:
         
         auto it_border = std::max_element(subtree.begin(), subtree.end());
         root->val = *it_border;
-        /*for(auto& tmp: subtree)
-        {
-           cout << "Current array = " << tmp; 
-        }
-        cout << endl;
-        cout << "Current val = " << root->val << endl;
-        */
+        
         if (subtree.begin() <= it_border-1 )
         {
             build_subtree(root->left, vector(subtree.begin(), it_border));
