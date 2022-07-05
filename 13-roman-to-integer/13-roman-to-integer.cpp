@@ -7,15 +7,16 @@ public:
         int last = 0;    
         for (int i = s.length()-1; i >= 0; --i)
         {
-        if (roman_nums.find(s[i])->second < last)
+            int curr_val = roman_nums.find(s[i])->second;
+        if (curr_val < last)
            {
-           ans -= roman_nums.find(s[i])->second;
+           ans -= curr_val;
            }
         else 
            {
-            ans += roman_nums.find(s[i])->second;
+            ans += curr_val;
             }
-            last = roman_nums.find(s[i])->second;
+            last = curr_val;
          }
         
       return ans;  
