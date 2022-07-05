@@ -15,7 +15,6 @@ public:
            {
             ans += roman_nums.find(s[i])->second;
             }
-        cout << "letter: " << s[i] << " sum: " << ans << endl;
             last = roman_nums.find(s[i])->second;
          }
         
