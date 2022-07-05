@@ -1,6 +1,6 @@
 class Solution {
 public:
-    bool isPalindrome(int x) {
+    /*bool isPalindrome(int x) {
         bool ans  = true;
         vector<int> num;
         
@@ -27,5 +27,19 @@ public:
         
         return ans;
         
+    }*/
+
+bool isPalindrome(int x) {
+        if(x<0 || (x!=0 &&x%10==0)) return false;
+    int back_num = 0;
+    
+    
+        while(x > back_num )
+        {
+            back_num =  back_num * 10 + x % 10;
+            x = x/10;
+        }
+        return (x == back_num) || (x == back_num/10);
     }
+    
 };
