@@ -3,32 +3,6 @@ public:
     vector<int> executeInstructions(int n, vector<int>& startPos, string s) {
         
         vector<int> ans;
-        /*
-        int start_pos = 0;
-        int cur_count = 0;
-        
-        for (int i = 0; i < s.length(); ++i)
-        {
-            for (int j = start_pos; i < s.length(); ++j)
-            {
-                switch(s.at(j))
-                {
-                    case 'U':
-                        {
-                            if ( start)
-                        }
-                    case 'D':
-                    case 'L':
-                    case 'R':
-                    default:
-                }
-            }
-            
-            ans.emplace_back(cut_count);
-            cur_count = 0;
-        }
-        
-        */
         
         find_steps_num (n, startPos, s, ans, 0);
         return ans;
