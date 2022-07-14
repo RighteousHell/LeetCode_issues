@@ -6,12 +6,12 @@ public:
         {
             p.emplace_back(i);
         }
-        
+        int poss = 0;
         vector<int> ans;
         int index = 0;
         for(int i = 0; i < queries.size(); ++i)
         {
-            int poss = 0;
+            
             for (auto j = p.begin(); j !=  p.end(); ++poss)
             {
                 if (*j == queries[i])
@@ -30,7 +30,7 @@ public:
                 }
                 
             }
-            
+            poss = 0;
         }
         
         return ans;
