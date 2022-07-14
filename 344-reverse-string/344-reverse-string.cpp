@@ -11,10 +11,11 @@ public:
             --end;
         }
         */
-        int n = s.size()-1;
-        for (int i = 0; i < s.size()/2; ++i, --n )
+         std::reverse_iterator rev_it = std::make_reverse_iterator(s.end());
+        //int n = s.size()-1;
+        for (int i = 0; i < s.size()/2; ++i, ++rev_it )
         {
-            swap(s[i], s[n]);
+            swap(s[i], *rev_it);
         }
     }
 };
