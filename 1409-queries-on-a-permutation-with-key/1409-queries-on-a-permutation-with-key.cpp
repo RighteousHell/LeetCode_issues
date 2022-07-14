@@ -18,9 +18,9 @@ public:
                 {
                     
                     ans.emplace_back(poss);
-                    int tmp = *j;
+                    p.emplace_front(*j);
                     p.erase(j);
-                    p.emplace_front(tmp);
+                    
                     
                     break;
                 }
