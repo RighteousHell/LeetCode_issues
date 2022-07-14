@@ -8,7 +8,6 @@ public:
         }
         
         vector<int> ans;
-        int index = 0;
         for(int i = 0; i < queries.size(); ++i)
         {
           int poss = 0;  
