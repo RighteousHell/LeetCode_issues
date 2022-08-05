@@ -2,7 +2,6 @@ class Solution {
 public:
     int maxDepth(string s) {
         int cur_deep = 0;
-        int max_deep = 0;
         int ans = 0;
         
         for (auto& ch : s)
@@ -10,9 +9,9 @@ public:
             if (ch == '(')
             {
                 ++cur_deep;
-                 if ( cur_deep > max_deep )
+                 if ( cur_deep > ans )
                  {
-                ans = max_deep = cur_deep;
+                ans = cur_deep;
                  }
             }
             if (ch == ')')
