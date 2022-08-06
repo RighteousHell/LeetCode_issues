@@ -10,7 +10,6 @@ public:
             
             for (auto& ch: tmp)
             {
-                cout << " ch: " << ch <<  " flag: " << flag;
                 if (allowed.find(ch) == string::npos)
                   {
                   flag = false;
@@ -21,10 +20,8 @@ public:
             
             if (flag)
             {
-                //cout << tmp << "  ";
                 ++ans;
             }
-cout << endl;
         }
         return ans;
         
