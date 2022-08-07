@@ -23,7 +23,7 @@ public:
         }
         else
         {
-            ans = string(s.begin(), s.begin()+i);
+            return string(s.begin(), s.begin()+i);
         }
         
         return ans;
