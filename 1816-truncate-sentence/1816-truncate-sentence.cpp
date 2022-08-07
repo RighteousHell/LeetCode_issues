@@ -19,7 +19,7 @@ public:
         
         if (k)
         {
-            ans = s;
+           return s;
         }
         else
         {
