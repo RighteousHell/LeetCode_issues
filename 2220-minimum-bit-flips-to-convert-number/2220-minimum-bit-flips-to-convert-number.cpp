@@ -1,0 +1,21 @@
+class Solution {
+public:
+    int minBitFlips(int start, int goal) {
+        
+        int xor_num = start xor goal;
+        
+     //int min_val = start > goal ?   ceil( log2(start) ) : ceil( log2(goal) );
+        
+        int ans = 0;
+        
+        while (xor_num)
+        {
+            ans += xor_num & 1;
+            xor_num >>= 1;
+        }
+        
+        
+        
+        return ans;
+    }
+};
