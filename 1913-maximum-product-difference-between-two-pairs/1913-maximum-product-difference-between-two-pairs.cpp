@@ -36,10 +36,8 @@ public:
                 
                 
             }
-            cout << endl << "min1 " << min1 << " min2 " << min2;
         }
         
-        cout << max1 << " " << max2 << " " << min1 << " " << min2 << " ";
         return (max1 * max2) - (min1 * min2);
     }
 };
