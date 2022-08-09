@@ -9,22 +9,25 @@ public:
         return ans;
     }
     
-    void dfs( vector<vector<int>>& graph, vector<vector<int>>& ans, vector<int> some_path, int index)
+    void dfs( vector<vector<int>>& graph, vector<vector<int>>& ans, vector<int>& some_path, int index)
     {
         some_path.emplace_back(index);
         
         if ( index == graph.size()-1)
         {
             ans.emplace_back(some_path);
-            return;
+        
         }
-        
-        
-        
-        for (int i = 0; i < graph[index].size(); ++i)
+        else
         {
-            dfs (graph, ans, some_path, graph[index][i]);
+            for (int i = 0; i < graph[index].size(); ++i)
+            {
+                dfs (graph, ans, some_path, graph[index][i]);
+            }
         }
+        some_path.pop_back();
+        
+        
     }
 };
 
