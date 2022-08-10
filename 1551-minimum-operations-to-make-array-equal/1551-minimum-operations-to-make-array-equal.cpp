@@ -1,22 +1,20 @@
 class Solution {
 public:
     int minOperations(int n) {
-        int ans = 0;
-        if (n%2 == 0)
+        int ans = 1;
+        int step = 3;
+        int mid = n/2-1;
+        if (n%2 != 0)
         {
-            ans = 1;
-            for (int i = 0, step = 3; i < n/2 -1 ; ++i, step +=2)
-            {
-                ans += step;  
-            }
+            --step;
+            --ans;
+            ++mid;
         }
-        else 
-        {
-            for (int i = 0, step = 2; i < n/2; ++i, step +=2)
+            
+            for (int i = 0; i < mid; ++i, step +=2)
             {
                 ans += step;  
             }  
-        }
         
         return ans;
     }
