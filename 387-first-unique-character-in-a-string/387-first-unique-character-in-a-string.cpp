@@ -1,7 +1,8 @@
+#define CHAR2INT(x) (x-'a')
 class Solution {
 public:
     int firstUniqChar(string s) {
-        #define CHAR2INT(x) (x-'a')
+       
         /*unordered_map <char, int> uniq_map;        
         
         for (auto& tmp: s)
