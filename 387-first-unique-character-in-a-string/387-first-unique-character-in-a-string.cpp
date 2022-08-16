@@ -1,6 +1,7 @@
 class Solution {
 public:
     int firstUniqChar(string s) {
+        #define CHAR2INT(x) (x-'a')
         /*unordered_map <char, int> uniq_map;        
         
         for (auto& tmp: s)
@@ -20,9 +21,9 @@ public:
         return -1;*/
         
         vector<int> v(26,0);
-		for(char c : s) v[c - 'a']++;
+		for(char c : s) v[CHAR2INT(c)]++;
 		for(int i = 0; i < s.length(); i++){
-			if(v[s[i] - 'a'] == 1) return i;
+			if(v[CHAR2INT(s[i])] == 1) return i;
 		}
 		return -1;
     }
