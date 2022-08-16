@@ -3,7 +3,7 @@ public:
     vector<int> twoSum(vector<int>& nums, int target) {
         
         vector<int> answer;
-        map<int,int> finder;
+        unordered_map<int,int> finder;
               
         
         
@@ -30,7 +30,7 @@ public:
             }
         }*/
         int tmp = 0;
-        finder.insert(pair<int,int>(nums.at(0), 0));
+        finder.insert(pair<int,int>(nums[0], 0));
         for ( int i = 1; i < nums.size(); ++i )
         {
             tmp = target - nums.at(i);
