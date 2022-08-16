@@ -1,4 +1,4 @@
-#define CHAR2INT(x) (x-'a')
+#define CHAR2INT(x) (x -'a')
 class Solution {
 public:
     int firstUniqChar(string s) {
