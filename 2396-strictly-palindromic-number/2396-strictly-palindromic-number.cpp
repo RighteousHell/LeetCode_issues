@@ -26,13 +26,11 @@ std::string concvert_to_nedded_base(int num, int base)
 		num /= base;
 	}
 	target_num += std::to_string(num);
-	//std::cout << target_num;
 	return target_num;
 }
 
 bool  is_polindrome (std::string str_num)
 {
-	//std::cout << str_num << std::endl;
 	for (int i = 0, j = str_num.length() - 1; i < str_num.length() / 2; ++i, --j)
 	{
 		if (str_num[i] != str_num[j])
