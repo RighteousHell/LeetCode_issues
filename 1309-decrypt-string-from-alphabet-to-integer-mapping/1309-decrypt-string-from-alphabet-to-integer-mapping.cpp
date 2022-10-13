@@ -26,14 +26,12 @@ public:
         {
             if (i+2 < s.length() && '#' == s[i+2])
             {
-                cout << "if" << endl;
              auto tmp =  symbols.find({s.begin() + i, s.begin() + i+3});
              ans += tmp->second;
                 i+=3;
              continue;   
             }
             else{
-            cout << "else" << endl;
             auto tmp =  symbols.find({s.begin() + i, s.begin() + i+1});
             ans += tmp->second;
         ++i;
